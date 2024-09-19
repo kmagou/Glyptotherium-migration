@@ -38,7 +38,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(1, size = 3, prob = (pres/total)) 
 
 #Late Blancan median consensus LTP
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSe_median_E_LTP_thresh")
@@ -57,7 +57,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(4, size = 6, prob = (pres/total)) 
 
 #Late Blancan median consensus maxSSS
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSe_median_E_maxsss_thresh")
@@ -76,7 +76,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(1, size = 6, prob = (pres/total)) 
 
 #Middle Blancan median consensus LTP
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSd_median_E_LTP_thresh")
@@ -95,7 +95,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(8, size = 10, prob = (pres/total)) 
 
 #Middle Blancan median consensus maxSSS
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSd_median_E_maxsss_thresh")
@@ -114,4 +114,4 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(4, size = 10, prob = (pres/total)) 

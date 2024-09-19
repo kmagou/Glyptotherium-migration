@@ -19,7 +19,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total))  
+dbinom(3, size = 3, prob = (pres/total))  
 
 #Rancholabrean median median maxSSS
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/final_combo_112_median_E_5")
@@ -38,7 +38,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total))  
+dbinom(1, size = 3, prob = (pres/total))  
 
 #Late Blancan median median LTP
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSe_median_E_LTP_thresh/median_median")
@@ -57,7 +57,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(4, size = 6, prob = (pres/total)) 
 
 #Late Blancan median median maxSSS
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSe_median_E_maxsss_thresh/median_median")
@@ -76,7 +76,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total))  
+dbinom(1, size = 6, prob = (pres/total))  
 
 #Middle Blancan median median LTP
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSd_median_E_LTP_thresh/median_median")
@@ -95,7 +95,7 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(8, size = 10, prob = (pres/total)) 
 
 #Middle Blancan median median maxSSS
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSd_median_E_maxsss_thresh/median_median")
@@ -114,5 +114,5 @@ pres = cells[2,2]
 percent_area = (pres/total)*100
 
 #binomial probability
-dbinom(2, size = 3, prob = (pres/total)) 
+dbinom(4, size = 10, prob = (pres/total)) 
 
