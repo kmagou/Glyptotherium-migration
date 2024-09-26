@@ -19,6 +19,7 @@ plot(mean)
 
 raster::writeRaster(mean, "median_consensus_LTPthresh_112", format='ascii')
 
+###check if threshold predicts independent points
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm")
 points_test = read.csv("pts_brazil.csv")
 pts <- points_test[c("LONG", "LAT")]
@@ -48,6 +49,7 @@ plot(mean)
 
 raster::writeRaster(mean, "median_consensus_LTPthresh_tfgSe", format='ascii')
 
+###check if threshold predicts independent points
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm")
 points_test = read.csv("pts_tfgSe.csv")
 pts <- points_test[c("LONG", "LAT")]
