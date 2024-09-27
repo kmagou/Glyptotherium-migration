@@ -20,6 +20,7 @@ threshValueM <- min(pointSuitabilityM$SuitabilityValue);
 reclassifiedRasterM <- reclassify(suitabilitySurface,c(-Inf,threshValueM,0,threshValueM,Inf,1));
 writeRaster(reclassifiedRasterM,"Glyptotherium_projection_median_median_LTPthresh.asc", overwrite = T)
 
+###check if threshold predicts independent points
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm")
 points_test = read.csv("pts_brazil.csv")
 pts <- points_test[c("LONG", "LAT")]
@@ -42,6 +43,7 @@ setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm/tfgSe_median_E_LTP_thresh/media
 reclassifiedRasterM <- reclassify(suitabilitySurface,c(-Inf,threshValueM,0,threshValueM,Inf,1))
 writeRaster(reclassifiedRasterM,"Glyptotherium_projection_median_median_thresh.asc", overwrite = T)
 
+###check if threshold predicts independent points
 setwd("C:/Users/Kat/Desktop/ENM_Fourth_Try/kuenm")
 points_test = read.csv("pts_tfgse.csv")
 pts <- points_test[c("LONG", "LAT")]
