@@ -15,17 +15,19 @@ names(occurrences)
 
 world_map <- map_data("world")
 
+rmna = occurrences[which(occurrences$`average age Ma` > 0.014),]
+
 p = ggplot() +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") +
-  geom_point(data = occurrences, aes(x = lng, y = lat, color = cut(occurrences$`average age Ma`, breaks = c(0.014, 0.240, 1.806, 4.75))), size = 2, show.legend = TRUE) +
-  coord_fixed(xlim = c(min(occurrences$lng),max(occurrences$lng)), ylim = c(min(occurrences$lat),max(occurrences$lat))) +
+  geom_point(data = rmna, aes(x = lng, y = lat, color = cut(rmna$`average age Ma`, breaks = c(0.014, 0.240, 1.806, 4.75))), size = 2, show.legend = TRUE) +
+  coord_fixed(xlim = c(min(occurrences$lng),max(occurrences$lng)), ylim = c(min(occurrences$lat),45)) +
   labs(title = "Glyptotherium Fossils", color = "NALMA Age", x = "", y = "")
 
 p + scale_color_manual(name = "Age", 
                       values = c("forestgreen", "cyan3", "darkmagenta"),
                       labels = c("Rancholabrean", "Irvingtonian", "Blancan"))
 
-#count occurences
+#count occurrences
 ### make a new dataframe for only occurrences in Blancan
 Blancan = occurrences[occurrences$`average age Ma` > 1.806 & occurrences$`average age Ma` < 4.75, ]
 
